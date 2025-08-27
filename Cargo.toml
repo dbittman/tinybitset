@@ -12,6 +12,10 @@ keywords = ["bitset", "stack", "small", "data-structure"]
 [dependencies]
 num-traits = "0.2.17"
 
+[features]
+default = ["std"]
+std = []
+
 [lints.rust]
 macro_use_extern_crate = "warn"
 meta_variable_misuse = "warn"
