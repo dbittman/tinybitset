@@ -23,24 +23,27 @@
 //! depending on the use-case.
 //!
 //! [fixedbitset]: https://github.com/petgraph/fixedbitset
+
+#![no_std]
+
 mod iterators;
 
-use std::array;
-use std::fmt;
-use std::fmt::Binary;
-use std::fmt::Debug;
-use std::fmt::Display;
-use std::fmt::Formatter;
-use std::fmt::LowerHex;
-use std::fmt::UpperHex;
-use std::ops::BitAnd;
-use std::ops::BitAndAssign;
-use std::ops::BitOr;
-use std::ops::BitOrAssign;
-use std::ops::BitXor;
-use std::ops::BitXorAssign;
-use std::ops::Index;
-use std::ops::Not;
+use core::array;
+use core::fmt;
+use core::fmt::Binary;
+use core::fmt::Debug;
+use core::fmt::Display;
+use core::fmt::Formatter;
+use core::fmt::LowerHex;
+use core::fmt::UpperHex;
+use core::ops::BitAnd;
+use core::ops::BitAndAssign;
+use core::ops::BitOr;
+use core::ops::BitOrAssign;
+use core::ops::BitXor;
+use core::ops::BitXorAssign;
+use core::ops::Index;
+use core::ops::Not;
 
 pub use iterators::IntoIter;
 use num_traits::PrimInt;
